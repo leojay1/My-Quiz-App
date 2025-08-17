@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="quiz-wrapper">
+      <h1 id="quiz-header">🚀 Your Quiz</h1>
+
+      <!-- 🔹 Live score display -->
+      <div id="live-score"></div>
+
+      <div id="quiz-container">
+        <h2 id="question-text">Loading...</h2>
+        <div id="answer-options"></div>
+        <p id="question-counter"></p>
+        <div id="attempt-Display"></div>
+        <div id="score-display"></div>
+
+        <div class="quiz-completed" style="display: none">🎉 Quiz Completed!</div>
+
+        <!-- 🔹 Final score display (already present, now styled) -->
+        <div id="final-score" style="display: none"></div>
+
+        <div id="loader" style="display: none">⏳ Loading...</div>
+
+        <div id="navigation">
+          <button id="prev-btn">Previous</button>
+          <button id="next-btn">Next</button>
+        </div>
+
+        <button id="try-again" style="display: none">Try Again</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
